@@ -23,8 +23,7 @@ Dieses Projekt basiert auf einem **Arduino Mega 2560** mit **M5Stack U160-V1.1 M
 ![alternative text](https://github.com/K33vin11/POE/blob/main/KlassenDiagramm.png)
 
 
-
-### 🧠 Robot
+### 🔹 Robot
 
 Zentrale Steuerklasse des Roboters, kapselt die Hauptkomponenten:
 
