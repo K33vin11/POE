@@ -1,0 +1,167 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Robot {
+  - DriveSystem* driveSystem
+  - Gripper* gripper
+  - BridgePlacer* bridgePlacer
+  - DistanceSensor* distanceSensor
+  + begin()
+  + move(float vx, float vy, float omega)
+  + stop(String direction)
+  + bridgeUp()
+  + bridgeUp(int extraTime)
+  + bridgeDown()
+  + gripperDown()
+  + gripperUp()
+  + gripperClose()
+  + gripperOpen()
+  + turn(float targetAngle) : bool
+  + setSpeedLimit(float limit)
+  + moveToRightEdge(float startOdy) : bool
+  + moveToLeftEdge() : bool
+  + moveToFrontEdge() : bool
+  + moveToBackEdge() : bool
+  + moveBack(float mills) : bool
+  + moveForward(float mills) : bool
+  + moveAlongRightEdge() : bool
+  + moveAlongRightEdge(int time) : bool
+  + moveAlongRightEdgeBack() : bool
+  + moveAlongRightEdgeBack(int time) : bool
+  + moveBack(int time, float startOdy) : bool
+  + objectInGripper() : bool
+}
+
+class DriveSystem {
+  - Wheel* wheels[4]
+  - EdgeSensor* edgeSensors[6]
+  - Gyro* gyro
+  - float posX
+  - float posY
+  - float orientation
+  - float speed
+  + begin()
+  + move(float vx, float vy, float omega)
+  + moveCorrect(float vx, float vy)
+  + setSpeedLimit(float limit)
+  + stop()
+  + stop(String direction)
+  + moveToBackEdge() : bool
+  + moveToFrontEdge() : bool
+  + moveToRightEdge()
+  + moveToRightEdge(float endOdy) : bool
+  + moveToLeftEdge() : bool
+  + moveBack(float mills) : bool
+  + moveBack(float mills, float startAngle) : bool
+  + moveForward(float mills) : bool
+  + searchBridge(String dirB) : bool
+  + getCurrentOrientation() : float
+  + updatePosition()
+  + resetOdometry()
+  + getCurrentLocation() : Location
+  + goTo(float targetX, float targetY) : bool
+  + moveAlongRightEdge() : bool
+  + moveAlongRightEdge(int time) : bool
+  + moveAlongRightEdgeBack() : bool
+  + moveAlongRightEdgeBack(int time) : bool
+  + turn(float targetAngle) : bool
+}
+
+class Wheel {
+  - Motor motor
+  - Encoder encoder
+  - float diameter
+  + begin()
+  + setSpeed(int speed)
+  + stop()
+  + stop(String direction)
+  + getDistanceMoved() : float
+  + reset()
+}
+
+class Motor {
+  - uint8_t i2cAddress
+  - bool invert
+  + setSpeed(int speed)
+  + sendSpeed(uint8_t direction, int speed)
+  + begin()
+  + stop()
+  + stop(String direction)
+}
+
+class Encoder {
+  - int pinA
+  - int pinB
+  - long pulses
+  - int encoderIndex
+  - bool invert
+  + begin()
+  + handleInterrupt()
+  + readPulses() : long
+  + reset()
+  + calculateDistance() : float
+}
+
+class EdgeSensor {
+  - int pin
+  + begin()
+  + detectEdge() : bool
+}
+
+class Gripper {
+  - int servoPin
+  - int dirPin
+  - int openP
+  - int closeP
+  - bool dir
+  + begin()
+  + Down(int time)
+  + Up(int time)
+  + open(int time)
+  + close(int time)
+}
+
+class BridgePlacer {
+  - int servoPin
+  - int dirPin
+  - bool dir
+  + begin()
+  + Down(int time)
+  + Up(int time)
+}
+
+class DistanceSensor {
+  - int trigPin
+  - int echoPin
+  - float detectionThreshold
+  - NewPing* sonar
+  + begin()
+  + getDistance() : float
+  + objectDetected() : bool
+}
+
+class Gyro {
+  - float currentOrientation
+  + begin()
+  + getOrientation() : float
+}
+
+class UserControl {
+  - int pinStart
+  + begin()
+  + startPressed() : bool
+}
+
+Robot --> DriveSystem
+Robot --> Gripper
+Robot --> BridgePlacer
+Robot --> DistanceSensor
+
+DriveSystem --> Wheel
+DriveSystem --> EdgeSensor
+DriveSystem --> Gyro
+
+Wheel --> Motor
+Wheel --> Encoder
+
+@enduml

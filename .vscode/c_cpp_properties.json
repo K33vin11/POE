@@ -1,0 +1,88 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/include",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/UserControl/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Robot/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/DistanceSensor/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Gripper/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/DriveSystem/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Wheel/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Motor/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Encoder/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Gyro/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/EdgeSensor/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/BridgePlacer/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Config/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Arduino_NineAxesMotion-master/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/.pio/libdeps/megaatmega2560/NewPing/src",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/.pio/libdeps/megaatmega2560/Servo/src",
+                "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/variants/mega",
+                "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/.pio/libdeps/megaatmega2560/Unity/src",
+                "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/include",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/UserControl/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Robot/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/DistanceSensor/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Gripper/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/DriveSystem/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Wheel/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Motor/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Encoder/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Gyro/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/EdgeSensor/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/BridgePlacer/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Config/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/lib/Arduino_NineAxesMotion-master/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/.pio/libdeps/megaatmega2560/NewPing/src",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/.pio/libdeps/megaatmega2560/Servo/src",
+                    "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "c:/Users/Fluxi-Maschine/Documents/PlatformIO/Projects/POE/.pio/libdeps/megaatmega2560/Unity/src",
+                    "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/Fluxi-Maschine/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60118",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "C:/Users/Fluxi-Maschine/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
