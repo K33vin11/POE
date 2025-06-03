@@ -6,7 +6,7 @@ Dieses Projekt basiert auf einem **Arduino Mega 2560** mit **M5Stack U160-V1.1 M
 
 ---
 
-## 🔹 Projektübersicht
+## Projektübersicht
 
 - Omniwheel-Fahrwerk mit 4 unabhängigen Rädern für 360°-Bewegung
 - 6 Infrarot-Kantensensoren zur Erkennung von Tischkanten
@@ -18,12 +18,12 @@ Dieses Projekt basiert auf einem **Arduino Mega 2560** mit **M5Stack U160-V1.1 M
 
 ---
 
-## 🔹 Klassenstruktur und Hauptfunktionen
-### 📊 Klassendiagramm
+## Klassenstruktur und Hauptfunktionen
+### Klassendiagramm
 ![alternative text](https://github.com/K33vin11/POE/blob/main/KlassenDiagramm.png)
 
 
-### 🔹 Robot
+### Robot
 
 Zentrale Steuerklasse des Roboters, kapselt die Hauptkomponenten:
 
