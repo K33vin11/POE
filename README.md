@@ -13,7 +13,7 @@ Dieses Projekt basiert auf einem **Arduino Mega 2560** mit **M5Stack U160-V1.1 M
 - Ultraschallsensor für Abstandsmessung und Objekterkennung
 - Greifer zum Aufnehmen und Ablegen von Objekten
 - Brückenleger zum Ablegen und Anheben einer Brücke
-- Live-Positionsbestimmung (X, Y, Theta) über Gyro
+- Live-Positionsbestimmung Theta über Gyro
 - State Machine zur Ablaufsteuerung (z. B. Brücke platzieren → Objekt holen → zurückfahren)
 
 ---
